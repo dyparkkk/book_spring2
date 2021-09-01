@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dypark.book.springboot.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-20T15:46:48" hostname="DESKTOP-CJFM7H2" time="0.003">
+  <properties/>
+  <testcase name="롬북_기능_테스트()" classname="com.dypark.book.springboot.web.dto.HelloResponseDtoTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
