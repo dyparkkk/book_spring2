@@ -17,6 +17,23 @@ cache:
 
 script: "./gradlew clean build"
 
+before_deploy:
+  - zip -r book_spring2
+  - mkdir -p deploy
+  - mv book_spring2.zip deploy/book_spring2.zip
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY  # Travis repo setting
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: freelec-dyparkkk-build
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: private # zip파일 접근을 private로
+    local_dir: deploy # before에서 생성한 디렉
+    wait-until-deployed: true
+
+
 #CI 실행 완료 시 메일로 알람
 notifications:
   email:
