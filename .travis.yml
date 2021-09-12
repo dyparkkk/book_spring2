@@ -37,7 +37,7 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY # travis repo setting
     secret_access_key: $AWS_SECRET_KEY
     bucket: freelec-dyparkkk-build
-    key: freelec-spring2.zip
+    key: book_spring2.zip
     bundle_type: zip
     application: freelec-spring2
     deployment_group: freelec-spring2
